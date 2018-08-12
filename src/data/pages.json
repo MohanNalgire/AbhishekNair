@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "pageId": 1,
+      "name": "Admin Rights"
+    },
+    {
+      "pageId": 2,
+      "name": "Challenges"
+    },
+    {
+      "pageId": 3,
+      "name": "Challenge Details"
+    },
+    {
+      "pageId": 4,
+      "name": "Videos"
+    },
+    {
+      "pageId": 5,
+      "name": "Users"
+    }
+  ]
+}

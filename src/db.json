@@ -1,0 +1,91 @@
+{
+  	"roles": [
+	{
+		"roleid": 1,
+		"name": "Super Admin"
+	}, 
+	{
+		"roleid": 2,
+		"name": "Admin"
+	}, 
+	{
+		"roleid": 3,
+		"name": "Moderator1"
+	}, 
+	{
+		"roleid": 4,
+		"name": "Moderator2"
+	}, 
+	{
+		"roleid": 5,
+		"name": "Sponser"
+	}
+	],
+    "pages": [
+    {
+      "pageId": 1,
+      "name": "Admin Rights"
+    },
+    {
+      "pageId": 2,
+      "name": "Challenges"
+    },
+    {
+      "pageId": 3,
+      "name": "Challenge Details"
+    },
+    {
+      "pageId": 4,
+      "name": "Videos"
+    },
+    {
+      "pageId": 5,
+      "name": "Users"
+    }
+  ],  
+  "pageRoleMapping": [
+    {
+      "roleId": 1,
+      "pagesIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 2,
+      "pagesIds": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 3,
+      "pagesIds": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 4,
+      "pagesIds": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "roleId": 5,
+      "pagesIds": [
+        2,
+        4
+      ]
+    }
+  ]
+}

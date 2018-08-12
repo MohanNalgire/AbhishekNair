@@ -1,0 +1,47 @@
+{
+  "pages": [
+    {
+      "roleId": 1,
+      "pagesIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 2,
+      "pagesIds": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 3,
+      "pagesIds": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 4,
+      "pagesIds": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "roleId": 5,
+      "pagesIds": [
+        2,
+        4
+      ]
+    }
+  ]
+}

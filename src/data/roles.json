@@ -1,0 +1,18 @@
+{
+	"roles": [{
+		"roleid": 1,
+		"name": "Super Admin"
+	}, {
+		"roleid": 2,
+		"name": "Admin"
+	}, {
+		"roleid": 3,
+		"name": "Moderator1"
+	}, {
+		"roleid": 4,
+		"name": "Moderator2"
+	}, {
+		"roleid": 5,
+		"name": "Sponser"
+	}]
+}
