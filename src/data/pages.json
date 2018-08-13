@@ -1,5 +1,4 @@
-{
-  "pages": [
+[
     {
       "pageId": 1,
       "name": "Admin Rights"
@@ -21,4 +20,3 @@
       "name": "Users"
     }
   ]
-}
