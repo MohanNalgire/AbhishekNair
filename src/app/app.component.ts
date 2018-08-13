@@ -20,16 +20,33 @@ export class AppComponent {
   ngOnInit(){
     this.getPages();
     this.getRoles();  
+    this.pageRoleMappings();
   }
 
+  public pageRoleMappings(){
+    this.httpClient.get('http://localhost:3000/pageRoleMapping')
+    .subscribe(
+      res=>{this.pageRoleMapping=res;},
+      error=>{console.error("Service related errors",error)},
+      ()=>{console.log('completed service pageRoleMapping');}
+  );
+  }
   public getPages(){
     return this.httpClient.get('http://localhost:3000/pages')
-    .subscribe(res=>this.pages=res);
+    .subscribe(
+      res=>{this.pages=res},
+      error=>{console.error('pages service error',error);},
+      ()=>{console.log('Complete service pages.');}
+    );
   }
 
   public getRoles(){
     return this.httpClient.get('http://localhost:3000/roles')
-    .subscribe(res=>this.roles=res);
+    .subscribe(
+      res=>{this.roles=res;},
+      error=>{console.error('roles service error',error);},
+      ()=>{console.log('Complete service roles.');}
+    );
   }
 
 
