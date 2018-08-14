@@ -17,8 +17,24 @@ pageRoleMapping::{{pageRoleMapping|json}}
     <tr *ngFor="let role of roles" >
       <td><b>{{role.name}}</b></td>
       <td *ngFor="let page of pages">
-        <!-- <span *ngIf="role.roleid==page.pageId" >{{role|json}}{{page|json}}</span>-->
-        <input type="checkbox" name="{{role.roleid}}{{page.pageId}}" value="" ngModel >  
+        <div *ngFor="let pgm of pageRoleMapping;index as i">
+          
+        <span *ngIf="role.roleid==pgm.roleId" >
+          <!--{{role|json}}-->          
+          <!--{{pgm.roleId|json}}-->
+          {{(pgm.pagesIds.indexOf(page.pageId)>-1)|json}}
+          <!--<input type="checkbox" name="{{role.roleid}}{{page.pageId}}" [checked]="(pgm.pagesIds.indexOf(page.pageId)>-1)" ngModel > -->
+          <input 
+            type="checkbox" 
+            [checked]="(pgm.pagesIds.indexOf(page.pageId) > -1)" 
+            name="{{role.roleid}}{{page.pageId}}" 
+            [ngModel]="(pgm.pagesIds.indexOf(page.pageId)>-1)?true:false"            
+          >
+            
+          <!--{{page|json}}-->
+        </span>
+      </div>
+        
         <!--Role::{{role.name}}    Page:: {{page.name}}-->
         <!--role::{{role.roleid}}  Page::{{page.pageId}}-->
       </td>
